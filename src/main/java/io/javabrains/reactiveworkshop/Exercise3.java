@@ -11,7 +11,9 @@ public class Exercise3 {
 
         // Get all numbers in the ReactiveSources.intNumbersFlux stream
         // into a List and print the list and its size
-        List<Integer> nums = ReactiveSources.intNumbersFlux().toStream().toList();
+        List<Integer> nums = ReactiveSources.intNumbersFlux()
+                .toStream()
+                .toList();
         System.out.println("list is " + nums + "\nSize" + nums.size());
 
         System.out.println("Press a key to end");
